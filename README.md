@@ -2,17 +2,23 @@
 
 Install npm packages
 Install the npm packages described in the package.json and verify that it works:
-# npm install
+
+```
+npm install
+```
 
 Run the application:
 
-# cd [PROJECT NAME]
-# ng serve
-
+```
+cd [PROJECT NAME]
+ng serve
+```
 Run the tests:
 
-#  cd [PROJECT NAME]
-#  ng test
+```
+cd [PROJECT NAME]
+ng test
+```
  
  A basic GitHub repository example for KendoUI-Angular-task -form control consisting of an input element and a corresponding list of values. 
  The values are names of people and there is a possibility new names to be added on the top of the existing list. Focus on the input field is giving the opportunity   user to navigate through the list, using Up/Down arrows. New name can be added in the list by simply typing the value and pressing Enter button from the keyboard.
