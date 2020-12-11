@@ -1,0 +1,28 @@
+.selected {
+  border: black 1px solid;
+}
+
+.person-list {
+  width: 15em;
+}
+
+.person {
+  position: relative;
+  background-color: #EEE;
+  padding: .3em .5em;
+  height: 1.6em;
+}
+
+input {
+  width: 17em;
+  height: 1.6em;
+  padding-right: 7px;
+}
+
+.text-input-wrapper span {
+  cursor:pointer;
+  font-weight:bold;
+  visibility:hidden;
+  position: relative;
+  right: 15px;
+}

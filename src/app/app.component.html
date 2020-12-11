@@ -1,0 +1,14 @@
+<form [formGroup]="myForm">
+  <span class="text-input-wrapper">
+    <input type="text" #newPerson class="name-input-box"
+               formControlName="name" (keyup.enter)="addPerson(newPerson.value)" (keyup)="showClearButton()"
+               (blur)="onBlur()" (focus)="onFocus()" (keydown)="onDown($event)">
+    <span #clearButton title="Clear" (click)="removeClick()">&times;</span>
+  </span>
+  <div class="person-list" #personsList>
+    <div *ngFor="let person of persons; let i=index" [class.selected]="i == arrowkeyLocation">
+      <div class="person">
+        {{(persons.length - i) + ' - '}} {{person.name}}</div>
+    </div>
+  </div>
+</form>
